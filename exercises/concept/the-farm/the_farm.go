@@ -15,6 +15,7 @@ func DivideFood(f FodderCalculator, c int) (float64, error) {
 	factor, err := f.FatteningFactor()
 	if err != nil {
 		return 0.0, err
+
 	}
 
 	return totalAmountFodder * factor / float64(c), nil
