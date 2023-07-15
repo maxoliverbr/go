@@ -1,7 +1,12 @@
 package parsinglogfiles
 
 func IsValidLine(text string) bool {
-	panic("Please implement the IsValidLine function")
+	switch text[:5] {
+	case "[TRC]":
+		return true
+
+	}
+	return false
 }
 
 func SplitLogLine(text string) []string {
